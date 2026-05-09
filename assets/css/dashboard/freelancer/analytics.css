@@ -1,0 +1,67 @@
+/* 
+ * WorkBazar — Freelancer Analytics CSS
+ */
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.page-header p {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.analytics-table-header {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  color: var(--ink);
+}
+
+.table-cell-month {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.table-cell-recharged {
+  color: var(--green);
+  font-weight: 800;
+}
+
+.table-cell-spent {
+  color: #ef4444;
+  font-weight: 800;
+}
+
+.status-positive {
+  color: var(--green);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-stable {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.empty-analytics-row {
+  text-align: center;
+  padding: 40px;
+  color: var(--muted);
+}
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 480px) {
+  .page-header h1 { font-size: 1.8rem; }
+  .analytics-table-header { font-size: 1.2rem; }
+}

@@ -1,0 +1,103 @@
+/* 
+ * Freelancer Saved Jobs CSS 
+ */
+.saved-jobs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.sj-header {
+  margin-bottom: 24px;
+}
+.sj-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+.sj-list {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.sj-item {
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: 0.2s;
+}
+.sj-item:last-child {
+  border-bottom: none;
+}
+.sj-item:hover {
+  background: #fafafa;
+}
+.sj-info h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.sj-info p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+.sj-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.sj-actions {
+  display: flex;
+  gap: 12px;
+}
+.btn-apply {
+  background: var(--green);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.btn-remove {
+  background: #f1f5f9;
+  color: var(--muted);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.btn-remove:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+.sj-empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+.sj-empty i {
+  font-size: 3rem;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+}
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 768px) {
+  .sj-item { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .sj-actions { width: 100%; }
+  .sj-actions a { width: 100%; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .sj-header h1 { font-size: 1.8rem; }
+  .sj-item { padding: 16px; }
+  .sj-meta { flex-direction: column; gap: 6px; }
+}

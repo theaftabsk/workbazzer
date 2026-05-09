@@ -1,0 +1,130 @@
+/* 
+ * WorkBazar — Navbar Mobile & Tablet Responsiveness
+ * Assets: assets/css/common/mobile/navbar-responsive.css
+ */
+
+/* ── Tablet (max-width: 1024px) ── */
+@media (max-width: 1024px) {
+  .wb-nav {
+    padding: 0 20px;
+    justify-content: space-between;
+    gap: 0;
+  }
+  
+  /* Hide the center links perfectly */
+  .wb-links {
+    display: none !important;
+  }
+  
+  /* Adjust right side elements for tablet */
+  .wb-nav-right {
+    gap: 16px;
+  }
+  
+  .wb-search input {
+    width: 120px; /* Make search bar smaller on tablet */
+  }
+}
+
+/* ── Large Mobile (max-width: 768px) ── */
+@media (max-width: 768px) {
+  .wb-nav {
+    padding: 0 20px;
+    height: 60px; /* Reduced height */
+  }
+  
+  .wb-logo {
+    font-size: 1.3rem;
+  }
+  
+  /* Hide search bar on mobile to save space */
+  .wb-search {
+    display: none !important;
+  }
+  
+  .wb-nav-right {
+    gap: 12px;
+  }
+  
+  /* Adjust buttons */
+  .btn-login {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+  
+  .btn-signup {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+  }
+  
+  /* Adjust Dashboard Icons */
+  .wb-nav-icon-link {
+    font-size: 1.25rem;
+  }
+  
+  .wb-nav-coins {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+  }
+  
+  .wb-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  
+  /* Adjust Dropdown menu position on mobile so it doesn't overflow screen */
+  .wb-profile-dd {
+    right: -10px;
+    min-width: 220px;
+  }
+}
+
+/* ── Small Mobile (max-width: 480px) ── */
+@media (max-width: 480px) {
+  .wb-nav {
+    padding: 0 16px;
+    height: 56px; /* Very compact height for small mobile */
+  }
+  
+  .wb-logo {
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+  }
+  
+  .wb-nav-right {
+    gap: 8px;
+  }
+  
+  /* Ultra compact buttons for very small screens */
+  .btn-login {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+  
+  .btn-signup {
+    padding: 5px 12px;
+    font-size: 0.75rem;
+  }
+  
+  /* Dashboard specific mobile adjustments */
+  .wb-nav-coins span {
+    display: none;
+  }
+  
+  .wb-nav-coins {
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .wb-avatar {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .wb-profile-dd {
+    right: -16px;
+    width: 100vw;
+    max-width: 280px;
+  }
+}

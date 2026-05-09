@@ -1,0 +1,22 @@
+/* ── Footer ── */
+.wb-footer { background: var(--dark); color: #fff; padding: 80px 20px 40px; }
+.wb-footer-top { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+.wb-footer-brand p { margin-top: 20px; color: #9ca3af; font-size: 0.9rem; max-width: 300px; }
+.wb-footer-col h4 { margin-bottom: 24px; font-size: 1rem; color: #fff; }
+.wb-footer-col ul { list-style: none; }
+.wb-footer-col ul li { margin-bottom: 12px; }
+.wb-footer-col ul li a { color: #9ca3af; transition: 0.3s; font-size: 0.9rem; }
+.wb-footer-col ul li a:hover { color: var(--green); }
+
+/* ── Footer Responsiveness ── */
+@media (max-width: 1024px) {
+  .wb-footer-top { grid-template-columns: 1fr 1fr; gap: 30px; }
+  .wb-footer-brand { grid-column: span 2; margin-bottom: 20px; }
+}
+
+@media (max-width: 640px) {
+  .wb-footer { padding: 60px 20px 30px; }
+  .wb-footer-top { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+  .wb-footer-brand { grid-column: 1; margin-bottom: 10px; }
+  .wb-footer-brand p { margin: 16px auto 0; }
+}

@@ -1,0 +1,103 @@
+/* 
+ * WorkBazar — Client Notifications CSS
+ */
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.page-header p {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.noti-list {
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.noti-item {
+  padding: 20px 24px;
+  border-bottom: 1px solid #f4f7f4;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: .2s;
+}
+
+.noti-item:hover {
+  background: #f9faf9;
+}
+
+.noti-item:last-child {
+  border-bottom: none;
+}
+
+.noti-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.noti-dot.unread {
+  background: var(--green);
+}
+
+.noti-content {
+  flex: 1;
+}
+
+.noti-title {
+  font-weight: 800;
+  color: var(--ink);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.noti-time {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.btn-view-noti {
+  background: none;
+  border: none;
+  color: var(--green);
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.btn-view-noti:hover {
+  color: var(--green-dark);
+}
+
+.empty-notifications {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.empty-notifications i {
+  font-size: 3rem;
+  color: var(--border);
+}
+
+.empty-notifications h3 {
+  margin-top: 15px;
+  color: var(--muted);
+}

@@ -1,0 +1,247 @@
+/* 
+ * WorkBazar — Client View Proposals CSS
+ */
+
+.proposals-container {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 24px;
+  transition: .2s;
+}
+
+.back-btn:hover {
+  color: var(--ink);
+}
+
+.job-summary {
+  background: #f9fafb;
+  border-radius: 24px;
+  padding: 32px 40px;
+  margin-bottom: 40px;
+  border: 1px solid var(--border);
+}
+
+.job-summary span {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.job-summary h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin: 8px 0;
+}
+
+.job-summary p {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.empty-proposals {
+  text-align: center;
+  padding: 100px 0;
+  background: #fff;
+  border-radius: 24px;
+  border: 1px dashed var(--border);
+}
+
+.empty-proposals i {
+  font-size: 4rem;
+  color: var(--border);
+}
+
+.empty-proposals h3 {
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.proposal-card {
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 32px;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 30px;
+  transition: .3s;
+}
+
+.proposal-card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(29, 191, 115, 0.3);
+}
+
+.freelancer-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f0fdf4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.freelancer-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.freelancer-info {
+  flex: 1;
+}
+
+.freelancer-info h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.freelancer-title {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fffbeb;
+  color: #b45309;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cover-letter {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #4b5563;
+  line-height: 1.6;
+  border-left: 4px solid var(--green);
+}
+
+.bid-details {
+  text-align: right;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bid-amount {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.bid-days {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.btn-hire {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: .3s;
+  width: 100%;
+}
+
+.btn-hire:hover {
+  background: var(--green-dark);
+  box-shadow: 0 4px 15px rgba(29, 191, 115, 0.3);
+}
+
+.btn-chat {
+  display: block;
+  text-align: center;
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: .2s;
+  width: 100%;
+}
+
+.btn-chat:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.contact-reveal {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.contact-reveal b {
+  display: block;
+  color: #166534;
+  margin-bottom: 10px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #166534;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .proposal-card { flex-direction: column; gap: 20px; }
+  .bid-details { text-align: left; }
+  .bid-details > div { margin-bottom: 20px; }
+}
+
+@media (max-width: 480px) {
+  .proposals-container { margin: 80px auto 40px; }
+  .job-summary { padding: 24px 16px; border-radius: 16px; }
+  .job-summary h1 { font-size: 1.6rem; }
+  .proposal-card { padding: 20px 16px; border-radius: 16px; }
+  .freelancer-avatar { width: 60px; height: 60px; font-size: 2rem; }
+  .freelancer-info h3 { font-size: 1.2rem; }
+  .cover-letter { padding: 16px; font-size: 0.85rem; }
+  .bid-amount { font-size: 1.5rem; }
+}

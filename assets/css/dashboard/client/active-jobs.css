@@ -1,0 +1,222 @@
+/* 
+ * WorkBazar — Client Active Jobs CSS
+ */
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.page-header p {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.empty-active-contracts {
+  text-align: center;
+  padding: 100px 0;
+  background: #fff;
+  border-radius: 24px;
+  border: 1px dashed var(--border);
+}
+
+.empty-active-contracts i {
+  font-size: 4rem;
+  color: var(--border);
+}
+
+.empty-active-contracts h3 {
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.empty-active-contracts a {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: .2s;
+}
+
+.empty-active-contracts a:hover {
+  color: var(--green-dark);
+}
+
+.active-contract-card {
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 32px;
+  margin-bottom: 24px;
+  transition: .3s;
+}
+
+.active-contract-card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(29, 191, 115, 0.3);
+}
+
+.contract-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contract-title h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.contract-freelancer {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.contract-freelancer strong {
+  color: var(--ink);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.status-in_progress { background: #fef3c7; color: #d97706; }
+
+.contact-reveal {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact-reveal b {
+  display: block;
+  color: #166534;
+  margin-bottom: 10px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #166534;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.contact-row span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contract-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #f4f7f4;
+}
+
+.contract-budget {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.contract-budget strong {
+  color: var(--ink);
+  font-size: 1.1rem;
+}
+
+.contract-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.link-profile {
+  color: var(--muted);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: .2s;
+}
+
+.link-profile:hover {
+  color: var(--ink);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  width: 450px;
+  padding: 30px;
+  border-radius: 24px;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
+.modal-content p {
+  color: var(--muted);
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.modal-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+}
+
+.modal-actions button {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .contract-header { flex-direction: column; gap: 15px; }
+  .contact-row { flex-direction: column; gap: 10px; align-items: flex-start; }
+  .contract-footer { flex-direction: column; align-items: flex-start; gap: 15px; }
+  .contract-actions { width: 100%; flex-direction: column; align-items: stretch; }
+  .contract-actions button { width: 100%; }
+  .contract-actions .link-profile { text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .page-header h1 { font-size: 1.8rem; }
+  .active-contract-card { padding: 20px 16px; border-radius: 16px; }
+  .contract-title h2 { font-size: 1.2rem; }
+  .contact-reveal { padding: 12px; }
+  .modal-content { width: 90%; padding: 24px 16px; }
+  .modal-actions { flex-direction: column; }
+}

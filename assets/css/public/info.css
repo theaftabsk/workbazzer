@@ -1,0 +1,96 @@
+/* 
+ * WorkBazar — Info & Legal CSS (privacy, terms, about)
+ * Premium Modern UI
+ */
+
+.info-wrap {
+  max-width: 900px;
+  margin: 120px auto 100px;
+  padding: 0 20px;
+}
+
+.info-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.info-header h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.info-header p {
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+.info-content {
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+  padding: 60px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.03);
+}
+
+.info-content h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.info-content h2:first-child {
+  margin-top: 0;
+}
+
+.info-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin-bottom: 24px;
+}
+
+.info-content ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.info-content li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  margin-bottom: 10px;
+}
+
+.info-content a {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.info-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .info-content {
+    padding: 30px;
+  }
+  .info-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-wrap { margin: 80px auto 60px; }
+  .info-header { margin-bottom: 40px; }
+  .info-header h1 { font-size: 1.8rem; }
+  .info-header p { font-size: 1rem; }
+  .info-content { padding: 24px 16px; border-radius: 20px; }
+  .info-content h2 { font-size: 1.4rem; }
+  .info-content p, .info-content li { font-size: 1rem; }
+}

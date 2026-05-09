@@ -1,0 +1,67 @@
+/* 
+ * WorkBazar — Blog & Resources CSS
+ */
+
+.wb-page-header { 
+  background: var(--ink); 
+  color: #fff; 
+  padding: 100px 20px; 
+  text-align: center; 
+}
+
+.wb-page-header h1 { 
+  font-size: 3rem; 
+  font-weight: 800; 
+  letter-spacing: -1px; 
+  margin-bottom: 20px; 
+}
+
+.wb-page-header p { 
+  font-size: 1.1rem; 
+  color: rgba(255,255,255,0.7); 
+  max-width: 700px; 
+  margin: 0 auto; 
+}
+
+.wb-content-section { 
+  max-width: 1000px; 
+  margin: 80px auto; 
+  padding: 0 20px; 
+  text-align: center; 
+}
+
+.wb-content-section i { 
+  font-size: 4rem; 
+  color: var(--green); 
+  margin-bottom: 20px; 
+}
+
+.wb-content-section h2 { 
+  font-size: 2rem; 
+  font-weight: 800; 
+  margin-bottom: 20px; 
+  color: var(--ink); 
+}
+
+.wb-content-section p { 
+  color: var(--muted); 
+  line-height: 1.7; 
+  margin-bottom: 24px; 
+  font-size: 1.1rem; 
+}
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 768px) {
+  .wb-page-header { padding: 60px 20px; }
+  .wb-page-header h1 { font-size: 2.2rem; }
+  .wb-content-section { margin: 40px auto; }
+}
+
+@media (max-width: 480px) {
+  .wb-page-header { padding: 40px 16px; }
+  .wb-page-header h1 { font-size: 1.8rem; }
+  .wb-page-header p { font-size: 1rem; }
+  .wb-content-section i { font-size: 3rem; }
+  .wb-content-section h2 { font-size: 1.5rem; }
+  .wb-content-section p { font-size: 1rem; }
+}

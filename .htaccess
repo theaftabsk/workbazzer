@@ -1,0 +1,24 @@
+# WorkBazar — Enterprise Routing
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS in production (uncomment if SSL is active)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Hide .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Routing for Dashboards
+RewriteRule ^dashboard/freelancer$ dashboard/freelancer.php [L]
+RewriteRule ^dashboard/client$ dashboard/client.php [L]
+RewriteRule ^dashboard/admin$ dashboard/admin.php [L]
+
+# Prevent directory listing
+Options -Indexes
+
+# Custom Error Pages
+ErrorDocument 404 /errors/404.php
+ErrorDocument 500 /errors/500.php

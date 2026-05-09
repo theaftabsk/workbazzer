@@ -1,0 +1,161 @@
+/* 
+ * WorkBazar — Freelancer Active Jobs CSS
+ */
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.page-header p {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.empty-active-jobs {
+  text-align: center;
+  padding: 100px 0;
+  background: #fff;
+  border-radius: 24px;
+  border: 1px dashed var(--border);
+}
+
+.empty-active-jobs i {
+  font-size: 4rem;
+  color: var(--border);
+}
+
+.empty-active-jobs h3 {
+  margin-top: 20px;
+  color: var(--muted);
+}
+
+.empty-active-jobs a {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: .2s;
+}
+
+.empty-active-jobs a:hover {
+  color: var(--green-dark);
+}
+
+.active-job-card {
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  padding: 32px;
+  margin-bottom: 24px;
+  transition: .3s;
+}
+
+.active-job-card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(29, 191, 115, 0.3);
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.job-card-title h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.job-card-client {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.job-card-client strong {
+  color: var(--ink);
+}
+
+.status-badge {
+  background: #ecfdf5;
+  color: #059669;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.contact-reveal {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-reveal-title {
+  font-weight: 700;
+  color: #0369a1;
+  margin-bottom: 10px;
+}
+
+.contact-details {
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+  color: #0c4a6e;
+}
+
+.contact-details span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.job-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #f4f7f4;
+}
+
+.job-agreement {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.job-agreement strong {
+  color: var(--ink);
+  font-size: 1.1rem;
+}
+
+.workspace-link {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.workspace-link:hover {
+  color: var(--green-dark);
+}
+
+@media (max-width: 768px) {
+  .job-card-header { flex-direction: column; gap: 15px; }
+  .contact-details { flex-direction: column; gap: 10px; }
+  .job-card-footer { flex-direction: column; align-items: flex-start; gap: 15px; }
+}

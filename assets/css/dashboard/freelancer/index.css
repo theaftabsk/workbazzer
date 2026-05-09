@@ -1,0 +1,141 @@
+/* 
+ * WorkBazar — Freelancer Dashboard Index CSS
+ */
+
+.dash-banner {
+  background: linear-gradient(135deg, var(--ink), #1f2937);
+  border-radius: 24px;
+  padding: 40px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-md);
+}
+
+.banner-text h1 { 
+  font-size: 2.2rem; 
+  margin-bottom: 10px; 
+  font-weight: 800; 
+}
+
+.banner-text p { 
+  color: #9ca3af; 
+  margin-bottom: 24px; 
+  font-size: 1.05rem; 
+}
+
+.btn-primary-white { 
+  background: #fff; 
+  color: var(--ink); 
+  padding: 12px 28px; 
+  border-radius: var(--radius-pill); 
+  font-weight: 700; 
+  text-decoration: none; 
+  display: inline-block; 
+  transition: .3s; 
+}
+
+.btn-primary-white:hover { 
+  background: var(--green); 
+  color: #fff; 
+  box-shadow: 0 8px 25px var(--green-glow);
+}
+
+.wallet-card { 
+  background: rgba(255,255,255,0.05); 
+  border: 1px solid rgba(255,255,255,0.1); 
+  border-radius: 20px; 
+  padding: 24px 32px; 
+  color: #fff; 
+  text-decoration: none; 
+  min-width: 240px; 
+  text-align: center; 
+  transition: .3s; 
+  backdrop-filter: blur(10px); 
+}
+
+.wallet-card:hover { 
+  transform: translateY(-5px); 
+  border-color: var(--green); 
+  background: rgba(255,255,255,0.1); 
+}
+
+.wallet-card span { 
+  font-size: 0.85rem; 
+  text-transform: uppercase; 
+  letter-spacing: 1.5px; 
+  color: #d1d5db; 
+}
+
+.wallet-card strong { 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 2.8rem; 
+  font-weight: 800; 
+  margin: 10px 0; 
+  color: #fff; 
+}
+
+.wallet-card strong i {
+  color: var(--green);
+}
+
+.wallet-footer { 
+  font-size: 0.85rem; 
+  font-weight: 700; 
+  color: var(--green); 
+}
+
+.view-all-link { 
+  color: var(--green); 
+  font-weight: 700; 
+  font-size: 0.95rem; 
+  transition: .2s; 
+}
+
+.view-all-link:hover { 
+  color: var(--green-dark); 
+}
+
+.empty-state { 
+  text-align: center; 
+  padding: 60px 20px; 
+  background: #fff; 
+  border-radius: 24px; 
+  border: 1px dashed var(--border); 
+}
+
+.empty-state i { 
+  font-size: 3.5rem; 
+  color: var(--border); 
+  margin-bottom: 15px; 
+  display: block; 
+}
+
+.empty-state h3 { 
+  font-size: 1.3rem; 
+  margin-bottom: 10px; 
+  color: var(--ink);
+}
+
+.empty-state p { 
+  color: var(--muted); 
+  margin-bottom: 24px; 
+}
+
+@media (max-width: 768px) {
+  .dash-banner { flex-direction: column; text-align: center; gap: 30px; padding: 30px 20px; }
+  .wallet-card { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .dash-banner { padding: 24px 16px; border-radius: 16px; }
+  .banner-text h1 { font-size: 1.6rem; }
+  .btn-primary-white { width: 100%; justify-content: center; }
+  .wallet-card { padding: 20px 16px; }
+  .wallet-card strong { font-size: 2.2rem; }
+}

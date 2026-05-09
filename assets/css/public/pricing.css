@@ -1,0 +1,218 @@
+/* 
+ * WorkBazar — Pricing CSS (pricing.php)
+ * Premium Modern UI
+ */
+
+.pricing-wrap {
+  max-width: 1200px;
+  margin: 120px auto 100px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.pricing-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.pricing-header p {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.pricing-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.toggle-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.toggle-switch {
+  width: 60px;
+  height: 32px;
+  background: var(--green);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-switch::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.pricing-toggle.annual .toggle-switch::after {
+  transform: translateX(28px);
+}
+
+.save-badge {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  padding: 40px;
+  position: relative;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  border-color: var(--green);
+}
+
+.pricing-card.popular {
+  border: 2px solid var(--green);
+  box-shadow: 0 15px 30px rgba(29, 191, 115, 0.1);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--green);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.plan-desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 30px;
+  min-height: 45px;
+}
+
+.plan-price {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.plan-price span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.plan-features {
+  list-style: none;
+  margin: 30px 0;
+  flex: 1;
+}
+
+.plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.plan-features li i {
+  color: var(--green);
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.btn-pricing {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  transition: 0.3s;
+}
+
+.btn-pricing.outline {
+  background: transparent;
+  border: 2px solid var(--border);
+  color: var(--ink);
+}
+
+.btn-pricing.outline:hover {
+  border-color: var(--ink);
+}
+
+.btn-pricing.filled {
+  background: var(--green);
+  color: #fff;
+  border: 2px solid var(--green);
+}
+
+.btn-pricing.filled:hover {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  box-shadow: 0 10px 20px rgba(29, 191, 115, 0.2);
+}
+
+@media (max-width: 992px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-wrap { margin: 80px auto 60px; padding: 0 16px; }
+  .pricing-header h1 { font-size: 2rem; }
+  .pricing-header p { font-size: 1rem; margin-bottom: 30px; }
+  .pricing-toggle { margin-bottom: 40px; flex-direction: column; gap: 10px; }
+  .pricing-card { padding: 24px 16px; border-radius: 20px; }
+  .plan-price { font-size: 2.5rem; }
+}

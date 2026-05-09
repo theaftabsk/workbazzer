@@ -1,0 +1,74 @@
+/* 
+ * WorkBazar — Top Verified Talent CSS
+ */
+
+.wb-page-header { 
+  background: var(--ink); 
+  color: #fff; 
+  padding: 100px 20px; 
+  text-align: center; 
+}
+
+.wb-page-header h1 { 
+  font-size: 3rem; 
+  font-weight: 800; 
+  letter-spacing: -1px; 
+  margin-bottom: 20px; 
+}
+
+.wb-page-header p { 
+  font-size: 1.1rem; 
+  color: rgba(255,255,255,0.7); 
+  max-width: 700px; 
+  margin: 0 auto; 
+}
+
+.wb-content-section { 
+  max-width: 1000px; 
+  margin: 80px auto; 
+  padding: 0 20px; 
+}
+
+.wb-feature-row { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 60px; 
+  align-items: center; 
+  margin-bottom: 100px; 
+}
+
+.wb-feature-text h2 { 
+  font-size: 2rem; 
+  font-weight: 800; 
+  margin-bottom: 20px; 
+  color: var(--ink); 
+}
+
+.wb-feature-text p { 
+  color: var(--muted); 
+  line-height: 1.7; 
+  margin-bottom: 24px; 
+}
+
+.wb-feature-img img { 
+  border-radius: 20px; 
+  box-shadow: var(--shadow-lg); 
+  width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .wb-page-header { padding: 60px 20px; }
+  .wb-feature-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .wb-page-header { padding: 40px 16px; }
+  .wb-page-header h1 { font-size: 1.8rem; }
+  .wb-page-header p { font-size: 1rem; }
+  .wb-feature-text h2 { font-size: 1.5rem; }
+  .wb-feature-text p { font-size: 0.95rem; }
+}

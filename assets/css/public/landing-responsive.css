@@ -1,0 +1,201 @@
+/* 
+ * WorkBazar — Home Page Mobile & Tablet Responsiveness 
+ * Assets: assets/css/public/landing-responsive.css
+ */
+
+/* ── Tablet Responsiveness (max-width: 992px) ── */
+@media (max-width: 992px) {
+  .wb-hero-inner {
+    padding: 80px 24px;
+  }
+  
+  .wb-hero h1 {
+    font-size: 4rem;
+  }
+  
+  .wb-hero p {
+    font-size: 1.15rem;
+  }
+  
+  .wb-roles-grid, 
+  .wb-steps, 
+  .wb-testimonials, 
+  .wb-faq-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .wb-card-dark, 
+  .wb-card-light {
+    padding: 30px;
+  }
+  
+  .wb-step {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .wb-step-num {
+    margin: 0 auto 20px;
+  }
+  
+  .wb-testimonial {
+    text-align: center;
+  }
+  
+  .wb-testimonial-author {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .wb-faq-left {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* ── Large Mobile Responsiveness (max-width: 768px) ── */
+@media (max-width: 768px) {
+  .wb-hero h1 {
+    font-size: 3rem;
+  }
+  
+  .wb-hero-search {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 12px;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+  }
+  
+  .wb-hero-search input {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .wb-hero-search button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+  }
+  
+  .wb-trusted-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 24px 20px;
+  }
+  
+  .wb-trusted-logos {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .wb-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .wb-heading {
+    font-size: 2.2rem;
+  }
+  
+  .wb-subheading {
+    margin: 0 auto 40px;
+  }
+  
+  .wb-role-top {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .wb-tag-list {
+    justify-content: center;
+  }
+}
+
+/* ── Small Mobile Responsiveness (max-width: 480px) ── */
+@media (max-width: 480px) {
+  .wb-hero {
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+  
+  .wb-hero-inner {
+    padding: 60px 16px;
+  }
+  
+  .wb-hero h1 {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+  
+  .wb-hero p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .wb-hero-toggle {
+    margin-bottom: 20px;
+  }
+  
+  .wb-hero-toggle a {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+  }
+  
+  .wb-hero-tags {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  
+  .wb-hero-tags span {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .wb-hero-tags a {
+    text-align: center;
+    padding: 12px;
+  }
+  
+  .wb-card-dark, 
+  .wb-card-light {
+    padding: 24px 16px;
+    border-radius: 20px;
+  }
+  
+  .wb-step {
+    padding: 24px 16px;
+  }
+  
+  .wb-heading {
+    font-size: 1.8rem;
+  }
+  
+  .wb-testimonial {
+    padding: 24px 16px;
+    border-radius: 20px;
+  }
+  
+  .wb-faq-left h2 {
+    font-size: 1.8rem;
+  }
+  
+  .wb-faq-q {
+    font-size: 1.15rem;
+  }
+  
+  .wb-faq-a {
+    font-size: 0.95rem;
+  }
+  
+  .wb-ticker-label {
+    padding: 0 15px;
+    font-size: 0.8rem;
+  }
+}

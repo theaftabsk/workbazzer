@@ -1,0 +1,230 @@
+/* 
+ * WorkBazar — Enterprise Solutions CSS
+ * Premium Corporate Design
+ */
+
+.enterprise-hero {
+  background: var(--ink);
+  color: #fff;
+  padding: 120px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.enterprise-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(29, 191, 115, 0.1) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.enterprise-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.enterprise-badge {
+  display: inline-block;
+  background: rgba(29, 191, 115, 0.2);
+  color: var(--green);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(29, 191, 115, 0.4);
+}
+
+.enterprise-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.enterprise-hero p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+}
+
+.btn-contact-sales {
+  display: inline-block;
+  background: var(--green);
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-contact-sales:hover {
+  background: var(--green-dark);
+  box-shadow: 0 10px 25px rgba(29, 191, 115, 0.3);
+  transform: translateY(-2px);
+}
+
+.enterprise-logos {
+  padding: 60px 20px;
+  background: #f9fafb;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.enterprise-logos p {
+  color: var(--muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  margin-bottom: 30px;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+
+.logo-grid i {
+  font-size: 2.5rem;
+  color: var(--ink);
+}
+
+.enterprise-features {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-block {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.feature-block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.feature-content p {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.feature-list li i {
+  color: var(--green);
+  font-size: 1.2rem;
+}
+
+.feature-image {
+  flex: 1;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+}
+
+.enterprise-cta {
+  background: var(--green);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.enterprise-cta h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.enterprise-cta p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-cta-white {
+  display: inline-block;
+  background: #fff;
+  color: var(--green);
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-cta-white:hover {
+  background: #f4f7f4;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 992px) {
+  .enterprise-hero h1 { font-size: 2.5rem; }
+  .feature-block, .feature-block:nth-child(even) { flex-direction: column; text-align: center; gap: 40px; }
+  .feature-list { text-align: left; display: inline-block; }
+}
+
+@media (max-width: 480px) {
+  .enterprise-hero { padding: 80px 16px; }
+  .enterprise-hero h1 { font-size: 1.8rem; }
+  .enterprise-hero p { font-size: 1rem; }
+  .feature-content h2 { font-size: 1.8rem; }
+  .feature-content p { font-size: 1rem; }
+  .enterprise-cta { padding: 60px 16px; }
+  .enterprise-cta h2 { font-size: 1.8rem; }
+  .btn-contact-sales, .btn-cta-white { width: 100%; text-align: center; justify-content: center; }
+}

@@ -1,0 +1,146 @@
+/* 
+ * WorkBazar — Find Work Pages CSS 
+ * Used for Ways to Earn, Promoted Ads
+ */
+
+.wb-page-header { 
+  background: var(--ink); 
+  color: #fff; 
+  padding: 120px 20px; 
+  text-align: center; 
+}
+
+.wb-page-header h1 { 
+  font-size: 3.5rem; 
+  font-weight: 800; 
+  letter-spacing: -1.5px; 
+  margin-bottom: 20px; 
+}
+
+.wb-page-header p { 
+  font-size: 1.2rem; 
+  color: rgba(255,255,255,0.8); 
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.wb-content-section { 
+  max-width: 1100px; 
+  margin: 100px auto; 
+  padding: 0 20px; 
+}
+
+.wb-feature-row { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 80px; 
+  align-items: center; 
+  margin-bottom: 120px; 
+}
+
+.wb-feature-row:nth-child(even) { 
+  direction: rtl; 
+}
+
+.wb-feature-row:nth-child(even) .wb-feature-text { 
+  direction: ltr; 
+}
+
+.wb-feature-text h2 { 
+  font-size: 2.5rem; 
+  font-weight: 800; 
+  margin-bottom: 24px; 
+  color: var(--ink); 
+  letter-spacing: -1px;
+}
+
+.wb-feature-text p { 
+  color: var(--muted); 
+  line-height: 1.8; 
+  margin-bottom: 30px; 
+  font-size: 1.1rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.feature-list li i {
+  color: var(--green);
+  font-size: 1.3rem;
+  margin-top: 2px;
+}
+
+.wb-feature-img img { 
+  border-radius: 24px; 
+  box-shadow: var(--shadow-lg); 
+  width: 100%; 
+}
+
+.wb-cta-banner {
+  background: var(--green);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
+
+.wb-cta-banner h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.wb-cta-banner .btn-white {
+  display: inline-block;
+  background: #fff;
+  color: var(--green);
+  padding: 16px 36px;
+  border-radius: 100px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.wb-cta-banner .btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 992px) {
+  .wb-feature-row, .wb-feature-row:nth-child(even) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    direction: ltr;
+    text-align: center;
+  }
+  .feature-list {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .wb-page-header { padding: 60px 16px; }
+  .wb-page-header h1 { font-size: 2rem; }
+  .wb-page-header p { font-size: 1rem; }
+  .wb-feature-text h2 { font-size: 1.8rem; }
+  .wb-feature-text p { font-size: 1rem; }
+  .wb-cta-banner { padding: 40px 16px; border-radius: 20px; }
+  .wb-cta-banner h2 { font-size: 1.8rem; }
+  .wb-cta-banner .btn-white { width: 100%; text-align: center; }
+}

@@ -1,0 +1,122 @@
+/* 
+ * WorkBazar — Admin Dashboard Index CSS
+ */
+
+.dash-banner-admin {
+  background: var(--ink);
+  border-bottom: 4px solid var(--green);
+  border-radius: 24px;
+  padding: 40px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-md);
+}
+
+.welcome-text-admin h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.welcome-text-admin p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.05rem;
+}
+
+.engine-status {
+  text-align: right;
+}
+
+.engine-version {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.engine-health {
+  color: var(--green);
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.stat-card-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-text-admin {
+  text-align: left;
+}
+
+.stat-text-admin strong {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stat-text-admin span {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-icon-admin {
+  opacity: 0.2;
+  font-size: 2rem;
+  color: var(--ink);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.table-header h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.table-header-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.link-manage {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.link-manage:hover {
+  color: var(--green-dark);
+}
+
+@media (max-width: 768px) {
+  .dash-banner-admin { flex-direction: column; text-align: center; gap: 20px; padding: 30px 20px; }
+  .engine-status { text-align: center; }
+  .table-header { flex-direction: column; gap: 15px; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .dash-banner-admin { padding: 24px 16px; border-radius: 16px; }
+  .welcome-text-admin h1 { font-size: 1.6rem; }
+  .welcome-text-admin p { font-size: 0.95rem; }
+  .engine-version { font-size: 1rem; }
+  .stat-card-admin { padding: 16px; }
+  .stat-text-admin strong { font-size: 1.6rem; }
+  .stat-icon-admin { font-size: 1.5rem; }
+  .table-header h2 { font-size: 1.2rem; }
+  .table-header-actions { flex-direction: column; width: 100%; gap: 10px; }
+  .table-header-actions a { width: 100%; text-align: center; padding: 10px; background: #f8fafc; border-radius: 8px; }
+}

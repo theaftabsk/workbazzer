@@ -1,0 +1,123 @@
+/* 
+ * Client Finance CSS (Billings & Transactions)
+ */
+.finance-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.f-header {
+  margin-bottom: 24px;
+}
+.f-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+.f-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.f-card h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+.f-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.f-table th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid var(--border);
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.f-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.f-table tr:last-child td {
+  border-bottom: none;
+}
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.status-paid {
+  background: rgba(29, 191, 115, 0.1);
+  color: var(--green);
+}
+.status-pending {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+.btn-download {
+  background: #f1f5f9;
+  color: var(--ink);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+.btn-download:hover {
+  background: #e2e8f0;
+}
+.pm-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.pm-icon {
+  font-size: 2rem;
+  color: var(--ink);
+}
+.pm-details h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.pm-details p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.btn-add {
+  background: var(--green);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 768px) {
+  .f-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .f-table { min-width: 600px; } /* Ensures table doesn't squish too much, allows horizontal scroll */
+}
+
+@media (max-width: 480px) {
+  .f-header h1 { font-size: 1.8rem; }
+  .f-card { padding: 20px 16px; border-radius: 16px; }
+  .pm-item { flex-direction: column; text-align: center; padding: 20px 16px; }
+  .btn-add { width: 100%; text-align: center; }
+}

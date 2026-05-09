@@ -1,0 +1,212 @@
+/* 
+ * WorkBazar — Public Profile CSS (profile.php)
+ * Premium Modern UI
+ */
+
+.profile-wrap {
+  max-width: 1200px;
+  margin: 100px auto 100px;
+  padding: 0 20px;
+}
+
+.profile-header-card {
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  margin-bottom: 40px;
+}
+
+.profile-cover {
+  height: 250px;
+  background: linear-gradient(135deg, #0b0b0b 0%, #1a1b1e 100%);
+  position: relative;
+}
+
+.profile-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(29, 191, 115, 0.2) 0%, transparent 70%);
+}
+
+.profile-info-section {
+  padding: 0 40px 40px;
+  position: relative;
+}
+
+.profile-avatar-large {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  background: #fff;
+  margin-top: -70px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--green);
+}
+
+.profile-avatar-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--ink);
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-title {
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.profile-stats-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.p-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-stat-val {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.p-stat-lbl {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.profile-bio {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-item {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  border-color: var(--green);
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 200px;
+  background: #f0f3f0;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 24px;
+}
+
+.portfolio-info h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.portfolio-info p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Reviews List */
+.review-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.review-stars {
+  color: #f59e0b;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.review-client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+}
+
+.review-client-name {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.review-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 768px) {
+  .profile-stats-row { flex-direction: column; gap: 15px; }
+  .portfolio-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .profile-wrap { margin: 60px auto 60px; padding: 0 16px; }
+  .profile-header-card { border-radius: 20px; }
+  .profile-cover { height: 150px; }
+  .profile-info-section { padding: 0 20px 24px; }
+  .profile-avatar-large { width: 100px; height: 100px; margin-top: -50px; border-width: 4px; font-size: 2rem; }
+  .profile-name { font-size: 1.8rem; }
+  .review-item { padding: 20px 16px; border-radius: 16px; }
+  .review-client { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
