@@ -11,9 +11,9 @@ define('APP_DEBUG', $isLocal);
 
 // ── Database ─────────────────────────────────────
 define('DB_HOST',    'localhost');
-define('DB_NAME',    'u849033904_aaaa');
-define('DB_USER',    'u849033904_aaaa');
-define('DB_PASS',    '2bXwC!EVp*');
+define('DB_NAME',    'your_db_name_here');
+define('DB_USER',    'your_db_user_here');
+define('DB_PASS',    'your_db_password_here');
 define('DB_CHARSET', 'utf8mb4');
 
 // ── Application ──────────────────────────────────
@@ -35,11 +35,11 @@ define('OTP_RATE_LIMIT',   3);   // Max 3 sends per hour per email
 define('MAIL_HOST',      'smtp.gmail.com');
 define('MAIL_PORT',       465);         // MUST be 465 for direct SSL connection
 define('MAIL_SECURE',    'ssl');
-define('MAIL_USER',      'aftabsk741156@gmail.com');           // ← your Gmail here
-define('MAIL_PASS',      'fygp lbkb cnqs byje');           // ← Gmail App Password here
+define('MAIL_USER',      'your_email@gmail.com');           // ← your Gmail here
+define('MAIL_PASS',      'your_app_password');           // ← Gmail App Password here
 define('MAIL_FROM',      'noreply@workbazar.in');
 define('MAIL_FROM_NAME', 'WorkBazar');
 
 // ── Razorpay ─────────────────────────────────────
-define('RAZORPAY_KEY_ID',     'rzp_test_SmPhTPgf2falxZ');
-define('RAZORPAY_KEY_SECRET', 'euaEc3GnfqTkK5o8JZDu2s6o');
+define('RAZORPAY_KEY_ID',     'your_razorpay_key_id');
+define('RAZORPAY_KEY_SECRET', 'your_razorpay_key_secret');
