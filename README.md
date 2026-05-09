@@ -2,6 +2,8 @@
 
 WorkBazar is a comprehensive freelancing and enterprise talent marketplace designed to connect clients with top-tier freelance talent. It provides a secure, reliable, and user-friendly platform with integrated authentication, job posting, messaging, and payment processing capabilities.
 
+**🌍 Live Demo:** [https://blue-tiger-674937.hostingersite.com](https://blue-tiger-674937.hostingersite.com)
+
 ## 🚀 Features
 
 - **User Authentication:** Secure login, registration, and OTP verification workflows.
